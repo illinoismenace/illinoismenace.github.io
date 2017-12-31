@@ -1,16 +1,16 @@
-#about-home {
-    padding: 100px 0px 50px 0px;
-    /* background-color: white; */
-    background-color: #017bff
-    /* background: url("../img/Regionals-1617.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto */
+body {
+    font-family: Nevis;
 }
 
-#history-home {
+#about-home,
+#history-home,
+#roster-home,
+#schedule-home,
+#gallery-home,
+#contact-home,
+#donate-home {
     padding: 100px 0px 50px 0px;
-    background-color: #017bff
+    background-color: #017bff;
 }
 
 .history-table {
@@ -26,36 +26,41 @@
     padding: 8px;
 }
 
+.contact-summary a {
+    color: orange;
+}
+
 /* .history-table tr:nth-child(even) {
     background-color: orange;
 } */
 
 .footer-body {
+    position: fixed;
     left: 0px;
     bottom: 0px;
     width: 100%;
-    height: 56px;
-    background-color: #434343
+    background-color: #434343;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
-.social-media {
-    padding: 8px;
+.footer-body .ultimate {
+    float: left;
 }
 
-.social-media .contact {
-    float: left
+.footer-body .ultimate a {
+    text-decoration: none;
+    padding: 2.5px 7.5px;
+    color: #ffffff;
 }
 
-.social-media .contact .fa {
+.footer-body .contact {
+    margin-left: auto;
+    float: right;
+}
+
+.footer-body .contact .fa {
     padding: 2.5px 5px;
-    color: #ffffff
-}
-
-.social-media .follow {
-    float: right
-}
-
-.social-media .follow .fa {
-    padding: 2.5px 5px;
-    color: #ffffff
+    color: #ffffff;
 }
