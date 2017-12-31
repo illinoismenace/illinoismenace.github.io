@@ -1,7 +1,61 @@
-#home {
+#about-home {
     padding: 100px 0px 50px 0px;
-    background: url("../img/Regionals-1617.jpg");
+    /* background-color: white; */
+    background-color: #017bff
+    /* background: url("../img/Regionals-1617.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto
+    background-size: auto */
+}
+
+#history-home {
+    padding: 100px 0px 50px 0px;
+    background-color: #017bff
+}
+
+.history-table {
+    /* font-family: arial, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.history-table td, 
+.history-table th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+/* .history-table tr:nth-child(even) {
+    background-color: orange;
+} */
+
+.footer-body {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: #434343
+}
+
+.social-media {
+    padding: 8px;
+}
+
+.social-media .contact {
+    float: left
+}
+
+.social-media .contact .fa {
+    padding: 2.5px 5px;
+    color: #ffffff
+}
+
+.social-media .follow {
+    float: right
+}
+
+.social-media .follow .fa {
+    padding: 2.5px 5px;
+    color: #ffffff
 }
