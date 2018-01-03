@@ -27,6 +27,10 @@ body {
     width: 20%;
 }
 
+.gallery-summary a {
+    color: orange;
+}
+
 .contact-summary a {
     color: orange;
 }
