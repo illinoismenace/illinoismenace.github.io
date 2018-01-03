@@ -2,19 +2,63 @@ body {
     font-family: Nevis;
 }
 
-#about-home,
-#history-home,
-#roster-home,
-#schedule-home,
-#gallery-home,
-#contact-home,
+#about-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Regionals-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#history-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Alumni-1617.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#roster-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Lafayette-Layout-1718.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#schedule-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Hucks-for-Dayz-2-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#gallery-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Fall-Brawl-2-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#contact-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/About-1314.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
 #donate-home {
-    padding: 15% 0% 10% 0%;
-    background-color: #017bff;
+    padding: 25% 0 25% 0;
+    background: url("../img/Hucks-for-Dayz-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .history-table {
-    /* font-family: arial, sans-serif; */
     border-collapse: collapse;
     width: 100%;
 }
@@ -26,18 +70,6 @@ body {
     padding: 8px;
     width: 20%;
 }
-
-.gallery-summary a {
-    color: orange;
-}
-
-.contact-summary a {
-    color: orange;
-}
-
-/* .history-table tr:nth-child(even) {
-    background-color: orange;
-} */
 
 .footer-body {
     position: fixed;
