@@ -15,7 +15,31 @@ body {
     background: url("../img/Alumni-1617.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: 0% 75%;
+}
+
+#history-1617-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Fall-Brawl-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
+}
+
+#history-1516-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/About-1516.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 30%;
+}
+
+#history-1415-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Conference-1415.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 }
 
 #roster-home {
