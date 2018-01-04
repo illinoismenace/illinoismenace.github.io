@@ -95,6 +95,10 @@ body {
     width: 20%;
 }
 
+.donate-summary form {
+    text-align: center;
+}
+
 .footer-body {
     position: fixed;
     left: 0px;
