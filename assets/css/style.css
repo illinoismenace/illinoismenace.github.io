@@ -1,0 +1,131 @@
+body {
+    font-family: Nevis;
+}
+
+#about-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Regionals-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#history-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Alumni-1617.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 75%;
+}
+
+#history-1617-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Fall-Brawl-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#history-1516-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/About-1516.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 30%;
+}
+
+#history-1415-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Conference-1415.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#roster-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Lafayette-Layout-1718.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#season-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Hucks-for-Dayz-2-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#gallery-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Fall-Brawl-2-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#contact-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Regionals-2-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#donate-home {
+    padding: 25% 0 25% 0;
+    background: url("../img/Hucks-for-Dayz-1617.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.history-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.history-table td, 
+.history-table th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 20%;
+}
+
+.donate-summary form {
+    text-align: center;
+}
+
+.footer-body {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #434343;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-body .ultimate {
+    float: left;
+}
+
+.footer-body .ultimate a {
+    text-decoration: none;
+    padding: 2.5px 7.5px;
+    color: #ffffff;
+}
+
+.footer-body .contact {
+    margin-left: auto;
+    float: right;
+}
+
+.footer-body .contact .fa {
+    padding: 2.5px 5px;
+    color: #ffffff;
+}
