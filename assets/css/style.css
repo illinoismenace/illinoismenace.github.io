@@ -95,6 +95,16 @@ body {
     width: 20%;
 }
 
+.gallery-summary a{
+  text-decoration: none;
+  color:orange;
+}
+
+.gallery-summary a:visited{
+  text-decoration: none;
+  color:blue;
+}
+
 .donate-summary form {
     text-align: center;
 }
