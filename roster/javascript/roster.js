@@ -7,10 +7,10 @@ var rosterSummary = document.getElementById("roster-summary")
 var i;
 for (i = 0; i < playersList.length; i++) {
     var player = document.createElement('div')
-    var playerInfo = playersList[i].split('-')
+    var playerInfo = playersList[i].split(' -')
     player.setAttribute('style', 'position: relative; width: 30%; margin:1%; display:inline-block;')
     player.innerHTML =
-      "<img src='img/otter.jpg' alt='picture' style='display: block; width: 100%; height: auto;'>" +
+      "<img src='img/player" + playerInfo[0] + ".png' alt='picture' style='display: block; width: 100%; height: auto;'>" +
       "<div className='roster-overlay' style='position: absolute; opacity: 0;'>" +
       "<div className='roster-text' style='color: white;font-size: 20px;position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%); text-align: center; width:100%;'>" +
       playerInfo.join('<br>') + "</div></div>"
