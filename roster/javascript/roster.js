@@ -1,7 +1,7 @@
 function showRosterName(x){
   console.log(x)
 }
-var players = '2 - Amy Copper* - SR,3 - Claire Follis - JR,5 - Cassidy Wichelecki - FR,7 - Naomi Gonzalez - FR,9 - Brittney Gorman - GR,12 - Brianna Anderson - GR,13 - Monica VanDuyne - JR,14 - Emely Arroyo - FR,16 - Gabbie Jones - SO,17 - Ellie Porath - GR,20 - Shirley Huang - JR,21 - Kelsey Thompson - SR,22 - Bonnie Wu - SO,32 - Faith Zou - SO,36 - Zifan Feng - SO,38 - Cora Wessman - SR,53 - Danielle Lindblad - SR,55 - Natalie Stephan* - SR,64 - Zifei Feng - SO,79 - Rui Yang - GR,Coach: Angelo Ramos'
+var players = '2 - Amy Copper* - SR,3 - Claire Follis - JR,4 - Maura Smith - FR,5 - Cassidy Wichelecki - FR,7 - Naomi Gonzalez - FR,9 - Brittney Gorman - GR,12 - Brianna Anderson - GR,13 - Monica VanDuyne - JR,14 - Emely Arroyo - FR,16 - Gabbie Jones - SO,17 - Ellie Porath - GR,20 - Shirley Huang - JR,21 - Kelsey Thompson - SR,22 - Bonnie Wu - SO,32 - Faith Zou - SO,36 - Zifan Feng - SO,38 - Cora Wessman - SR,53 - Danielle Lindblad - SR,55 - Natalie Stephan* - SR,64 - Zifei Feng - SO,79 - Rui Yang - GR,Coach - Angelo Ramos'
 playersList = players.split(',')
 var rosterSummary = document.getElementById("roster-summary")
 var i;
