@@ -10,7 +10,7 @@
 </head>
 <body class="body" id="page-top">
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="/"><i class="fa fa-home fa-1x"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
     <section id="roster">
         <div class="roster-body" style="width: 80%; margin: auto; padding: 0px 25px">
             <div id="roster-summary" style="padding: 25px 0px; width: 750px; max-width: 90%; margin: auto">
-                <h2 style="margin: auto">2017-2018 Roster</h2><br>
+                <h2>2018-2019 Roster</h2><br>
             </div>
         </div>
     </section>
@@ -70,4 +70,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 </body>
 <script src='javascript/roster.js'></script>
+<style>
+.roster-text{
+  color: white;
+  position: absolute;
+  padding:10% 1%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width:100%;
+  overflow:scroll;
+  height:100%;
+}
+.roster-img{
+  display: block;
+  width: 100%;
+  height:100%;
+}
+.roster-overlay{
+  position: absolute;
+  opacity: 0;
+}
+.roster-container{
+  position: relative;
+  width: 30%;
+  margin:1%;
+  display:inline-block;
+  height:300px;
+  max-height:300px;
+  background: black;
+}
+h2{
+  margin: auto;
+}
+.roster-name{
+  font-size: 1.5em;
+}
+@media screen and (max-device-width: 500px){
+  .roster-container{
+    width: 100%;
+    height: 100%;
+    max-height: none;
+  }
+  .roster-text {
+    font-size: 2.5em;
+  }
+  h2{
+    font-size:4em;
+  }
+}
+</style>
 </html>
