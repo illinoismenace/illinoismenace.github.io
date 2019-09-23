@@ -27,6 +27,7 @@ class DummyPlayer extends Player{
   constructor(name, funFact, year){
     super(name, 4, funFact, 'Keeping my secret talent as secret', 'Magic', year);
   }
+
 }
 
 class Coach{
