@@ -54,8 +54,8 @@ new Player("Zifei Feng", 2, "I didn't know I need to score in my first frisbee p
 new Player("Zifan Feng", 0, "Watch all videos at 1.5x speed","Make Zifei cook me food","Computer Science",3),
 new Player("Cassidy Wichelecki", 0, "I've played piano since kindergarten","Im Pretty Good at claw machines ","Undeclared",2),
 new Player("Rui Yang", 1, "I played basketball in school for two year in undergraduate to grow taller. (But obviously it didn't work <br>(╯°Д°)╯︵ ┻━┻", "I once had a nap in standing position.", "Computer Science", 4),
-new DummyPlayer("Adeline Tan", 3, "I won the 2018 Olympic of Hula Hooping", 3)
-new DummyPlayer("Luisa Ruge-Jones", 0, "My last name has a hypen in it!!!", 4)
+new DummyPlayer("Adeline Tan", 3, "I won the 2018 Olympic of Hula Hooping", 3),
+new DummyPlayer("Luisa Ruge-Jones", 0, "My last name has a hypen in it!!!", 4),
 new DummyPlayer("Bonnie Wu", "I burped the alphabat", 2),
 new DummyPlayer("Galilea Flores","I fed a cheetah with cheetos and she liked it" ,3),
 new DummyPlayer("Claire Szilagyi", "I ranked my favorite restrooms on campus", 2),
