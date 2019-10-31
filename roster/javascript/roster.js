@@ -4,22 +4,24 @@ function showRosterName(x){
 var HARRY_HOUSES = ['Rowena Ravenclaw', 'Helga Hufflepuff', 'Godric Gryffindor', 'Salazar Slytherin', 'Muggle']
 var YEAR = ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'Young as Sunrise']
 class Player{
-  constructor(name, house, funFact, talent, major, year, isCaptain=false){
+  constructor(name, year, major, snack, life, funFact, isCaptain=false){
     this.name = name
-    this.house = house
+    this.year = year
     this.funFact = funFact
-    this.talent = talent
+    this.life = life
     this.major = major
     this.year = year
+    this.snack = snack
     this.isCaptain = isCaptain
   }
   getString() {
     let name = this.name
     if(this.isCaptain) name += '*'
-    return '<b class="roster-name">'+name + '</b><br>'+YEAR[this.year]+'<br>'+this.major+'<br><b>Harry Potter House<br></b>'+HARRY_HOUSES[this.house]+'<br><b>Fun Fact</b><br>'+this.funFact+'<br><b>Secret Talent</b><br>'+this.talent;
+    return '<b class="roster-name">'+name + '</b><br>'+this.year+'<br>'+this.major+'<br><b>Fav Tourney Snack<br></b>'+this.snack+'<br><b>Fun Fact</b><br>'+this.funFact+'<br><b>How has playing college ultimate change your life?</b><br>'+this.life;
   }
   getImage() {
-    return this.name.replace(/\s/g, '')+ '.png'
+    var pic = this.name
+    return pic+'.png'
   }
 }
 
@@ -42,27 +44,32 @@ class Coach{
   }
 }
 var players = [
-new Player("Brittney Gorman", 0, "I’ve been in a movie with Nicholas Cage","Convincing Copper of anything I say","Biophysics", 4),
-new Player("Angela Gavic", 1, "I speak Bosnian.","I'm stupidly good at the Facebook Messenger game called Block Party.","Undeclared",1),
-new Player("Caroline Wheeler", 1, "I cry when I eat spicy foods","I play guitar and have double jointed ankles!","Political Science",1),
-new Player("Elie Shiro", 0, "I have 3 dogs","I can play the violin","Engineering Undeclared",1),
-new Player("Vanessa Tran", 2, "I love learning complicated yoga poses","I'm really good at sleeping. I can sleep 24hrs if given the opportunity.","Division of General Studies",1),
-new Player("Becca Napoli", 1, "I have double jointed thumbs","I wish","Mechanical Engineering and Spanish",3),
-new Player("Faith Zou", 3, "I really enjoy the Harry Potter series, and I cried very hard at my first HP film concert. ","I did traditional Chinese calligraphy for 6 years when I was little. ","Geographic Information Science",3),
-new Player("Jenna Kokkat", 2, "I'm legally blind without glasses!","I always have room for dessert. ","Chemistry ",3),
-new Player("Megan Coleman", 2, "I always have peanut butter m&m's on hand, at all times.","Cake Decorating :P","Major: Computer Engineering. Minors: Mathematics, Informatics",3),
-new Player("Zifei Feng", 2, "I didn't know I need to score in my first frisbee practice","Pretend I don't know anything","Computer Science",3),
-new Player("Zifan Feng", 0, "Watch all videos at 1.5x speed","Make Zifei cook me food","Computer Science",3),
-new Player("Cassidy Wichelecki", 0, "I've played piano since kindergarten","Im Pretty Good at claw machines ","Undeclared",2),
-new Player("Rui Yang", 1, "I played basketball in school for two year in undergraduate to grow taller. (But obviously it didn't work <br>(╯°Д°)╯︵ ┻━┻", "I once had a nap in standing position.", "Computer Science", 4),
-new DummyPlayer("Adeline Tan", "I won the 2018 Olympic of Hula Hooping", 3),
-new DummyPlayer("Eden Brewer", "I like butter chicken, especially the peanut one", 3),
-new DummyPlayer("Luisa Ruge-Jones", "My last name has a hypen in it!!!", 4),
-new DummyPlayer("Bonnie Wu", "I burped the alphabat", 2),
-new DummyPlayer("Galilea Flores","I fed a cheetah with cheetos and she liked it" ,3),
-new DummyPlayer("Claire Szilagyi", "I ranked my favorite restrooms on campus", 2),
-new DummyPlayer("Mary Cook","I eat spicy foods when I cry",1),
-new DummyPlayer("Emma Worrell", "Too serious to have fun fact", 1),
+new Player("Adeline Tan", "Junior", "Economics","Banana, fruit snack, animal crackers","Busier!!! But also more interesting and fun because I get to play with fun people and go to cool places.","I've tried playing a few sports like basketball, soccer, badminton, tennis BUT frisbee is still the most fun that's why I'm here! :) "),
+new Player("Angela Gavic", "Sophomore", "Accounting","Hot Cheetos","I made new friends and learned a lot. ","I do (sometimes competitive) ballroom dancing. "),
+new Player("Becca Napoli", "Senior", "Mechanical Engineering","Sour Patch Kids","It has brought me so many new friendships and has helped me grow my overall confidence!","I have double jointed thumbs", true),
+new Player("Bonnie Wu", "Senior", "Molecular and Cellular Biology","Animal Crackers","I now eat food from ground","I cook things"),
+new Player("Brittney Gorman", "Graduate Student", "Biophysics ","Cheez-its","I’ve become a fire breathing dragon","Jellyfish love me "),
+new Player("Caroline Wheeler", "Sophomore", "Advertising","Skittles","I have a lot more friends :)","I used to work as one of Santa’s elves in the mall "),
+new Player("Claire \"Claw\" Trumbull", "Graduate Student", "Master of Social Work ","Beef Jerky","My Menace teammates believe in me and it feels SO good!","Whoppers are the superior $1.00 Boxed Candy."),
+new Player("Claire Szilagyi", "Junior", "Economics","Nuts","I have friends now :)","I actually have a ranked list of my favorite bathrooms on campus"),
+new Player("Elisabeth Shiro", "Sophomore", "Aerospace engineering ","Pretzels","No","No"),
+new Player("Emma Worrell", "Sophomore", "Statistics","Slim Jims","I've made a lot of amazing friends!","Nash Grier followed me back on vine. RIP Vine."),
+new Player("Faith Zou", "Senior", "Geographic Information Science","Twix","Found a fun activity to do!","I'm a Slytherin!"),
+new Player("Grace Caserio", "Freshman", "Undecided ","Goldfish ","Meeting so many nice people has made my life so much more positive. ","I played the piano and the oboe in high school "),
+new Player("Jenna Kokkat", "Senior", "Chemistry ","Fruit snacks ","I finally have weekend plans","I always finish my dessert"),
+new Player("Julia Kasner", "Freshman", "Chemistry and Philosophy","kettle corn","Being a part of this team has allowed me to meet a lot of new people as well as learn a new skill in playing frisbee.","I'm a big fan of spoons (as in silverware). They're an essential daily tool and have many uses in and out of the kitchen."),
+new Player("Lexi Larson", "Freshman", "Engineering undeclared","Pickles","I've been able to meet super cool people and continue playing the sport that I love!","I have gone to the same summer camp for 9 years!!"),
+new Player("Lily Dix", "Junior", "CS + Math","Oranges","Since joining the team I've gotten to meet a ton of new friendly people and have become much more physically active!","My favorite animals are giraffes."),
+new Player("Luisa (RJ) Ruge-Jones", "Graduate Student", "Communication","Clif Bar BLOKS","It has kick-started my future career as a sushi chef. And also I am constantly surrounded by wonderful people.","My favorite things to do when I was a child were play outside and make lists. I know because I wrote it down in a list. ", true),
+new Player("Rose Dinh", "Sophomore", "Computer Science","Goldfish","Menace has been a great way to make friends, relieve stress, and beat my cousins in pick-up games of ultimate frisbee.","I crochet with a club of old ladies. "),
+new Player("Rui Yang", "Graduate Student", "Computer Science","KIND protein bar","I installed snapchat and instgram!","My English name before joining UIUC is Shirley."),
+new Player("Shirley Huang", "Graduate Student", "Computer Science","Welch's fruit snacks","I learned what it truly means to compete as an athlete, to come back stronger from injuries, and to push myself to be a better player, teammate, and friend.","#GoSpursGo"),
+new Player("Vanessa Tran", "Sophomore", "Undecided","Clementines","I cook things now","I can cook an egg"),
+new Player("Zifan Feng", "Senior", "Computer Science","KIND bars and peanut butter","meet a bunch of funny people","I watch all YouTube videos in 1.5 - 2x speed"),
+new Player("Zifei Feng", "Senior", "Computer Science","Animal cracker","I don't mind eating animal crackers from the ground","I didn't know I need to score in my first ultimate practice"),
+new Player("Cassidy Wichelecki", "Junior", "Statistics","Pretzels","I've met so many wonderful people through ultimate! ","Claw Machine Master "),
+new Player("Natalia Hryniewicki", "Freshman", "Chemistry","Chips","It has made me more fit and helped my self esteem.","I have a sister that’s 13 years younger than me."),
+new Player("Eden Brewer", "Senior", "Political Science","Watermelon, Slim Jims, Grapes","This is a hard question to answer","My cats are named after cheese "),
 new Coach("Angelo Ramos")
 ];
 
@@ -73,7 +80,7 @@ for ( var playerIndex in players) {
     var playerInfo = players[playerIndex]
     player.className = 'roster-container'
     player.innerHTML =
-      "<img class='roster-img'src='playerImage/" + playerInfo.getImage() + "\' alt='picture'>" +
+      "<img class='roster-img' src='playerImages2019/" + playerInfo.getImage() + "\' alt='picture'>" +
       "<div class='roster-overlay'>" +
       "<div class='roster-text'>" +
       playerInfo.getString()+ "</div></div>"
