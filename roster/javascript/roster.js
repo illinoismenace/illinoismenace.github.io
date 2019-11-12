@@ -26,8 +26,11 @@ class Player{
 }
 
 class DummyPlayer extends Player{
-  constructor(name, funFact, year){
-    super(name, 4, funFact, 'Keeping my secret talent as secret', 'Magic', year);
+  constructor(name, year, funFact){
+    super(name, year, "Otter Training", "Too energetic to snack", "My fun fact is not fact!", funFact);
+  }
+  getImage() {
+    return "otter.png"
   }
 
 }
@@ -70,6 +73,9 @@ new Player("Zifei Feng", "Senior", "Computer Science","Animal cracker","I don't 
 new Player("Cassidy Wichelecki", "Junior", "Statistics","Pretzels","I've met so many wonderful people through ultimate! ","Claw Machine Master "),
 new Player("Natalia Hryniewicki", "Freshman", "Chemistry","Chips","It has made me more fit and helped my self esteem.","I have a sister that’s 13 years younger than me."),
 new Player("Eden Brewer", "Senior", "Political Science","Watermelon, Slim Jims, Grapes","This is a hard question to answer","My cats are named after cheese "),
+new DummyPlayer("Mary Cook", "Sophomore", "I eat spicy foods when I cry"),
+new DummyPlayer("Galilea Flores", "Sophomore", "I can use chopsticks with both my hands"),
+new DummyPlayer("Erin Kuehner", "Freshman", "I taught a 60-year-old person how to ski"),
 new Coach("Angelo Ramos")
 ];
 
