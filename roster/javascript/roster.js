@@ -76,6 +76,8 @@ new Player("Eden Brewer", "Senior", "Political Science","Watermelon, Slim Jims, 
 new DummyPlayer("Mary Cook", "Sophomore", "I eat spicy foods when I cry"),
 new DummyPlayer("Galilea Flores", "Sophomore", "I can use chopsticks with both my hands"),
 new DummyPlayer("Erin Kuehner", "Freshman", "I taught a 60-year-old person how to ski"),
+new DummyPlayer("Christina Thompson", "Freshman", "I can lift a cello over my head"),
+new DummyPlayer("Julia Cronan", "Junior", "I can jump like a kangeroo for 100 meters"),
 new Coach("Angelo Ramos")
 ];
 
