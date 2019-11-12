@@ -75,7 +75,7 @@ new Player("Natalia Hryniewicki", "Freshman", "Chemistry","Chips","It has made m
 new Player("Eden Brewer", "Senior", "Political Science","Watermelon, Slim Jims, Grapes","This is a hard question to answer","My cats are named after cheese "),
 new DummyPlayer("Mary Cook", "Sophomore", "I eat spicy foods when I cry"),
 new DummyPlayer("Galilea Flores", "Sophomore", "I can use chopsticks with both my hands"),
-new DummyPlayer("Erin Kuehner", "Freshman", "I taught a 60-year-old person how to ski"),
+new Player("Erin Kuehner", "Freshman","Journalism", "Bagels and cream cheese!","It’s introduced me to a family I can rely on :)",  "I am the proud owner of every single Pokemon game since gen 3. "),
 new DummyPlayer("Christina Thompson", "Freshman", "I can lift a cello over my head"),
 new DummyPlayer("Julia Cronan", "Junior", "I can jump like a kangeroo for 100 meters"),
 new Coach("Angelo Ramos")
