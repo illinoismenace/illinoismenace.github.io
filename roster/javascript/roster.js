@@ -72,6 +72,7 @@ new Player("Natalia Hryniewicki", "Freshman", "Chemistry","Chips","It has made m
 new Player("Rose Dinh", "Sophomore", "Computer Science","Goldfish","Menace has been a great way to make friends, relieve stress, and beat my cousins in pick-up games of ultimate frisbee.","I crochet with a club of old ladies. "),
 new Player("Rui Yang", "Graduate Student", "Computer Science","KIND protein bar","I installed snapchat and instgram!","My English name before joining UIUC is Shirley."),
 new Player("Shirley Huang", "Graduate Student", "Computer Science","Welch's fruit snacks","I learned what it truly means to compete as an athlete, to come back stronger from injuries, and to push myself to be a better player, teammate, and friend.","#GoSpursGo"),
+new Player("Sushmita Azad", "Graduate Student", "Computer Science", "Apples and Peanut butter", "Its given me friends outside the bubble of grad-school CS! And that dopamine hit that makes winter bearable 🙂", "I have a cat named Kitta, and she sleeps sitting upright!"),
 new Player("Vanessa Tran", "Sophomore", "Undecided","Clementines","I cook things now","I can cook an egg"),
 new Player("Zifan Feng", "Senior", "Computer Science","KIND bars and peanut butter","meet a bunch of funny people","I watch all YouTube videos in 1.5 - 2x speed"),
 new Player("Zifei Feng", "Senior", "Computer Science","Animal cracker","I don't mind eating animal crackers from the ground","I didn't know I need to score in my first ultimate practice"),
