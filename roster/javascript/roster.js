@@ -4,20 +4,20 @@ function showRosterName(x){
 var HARRY_HOUSES = ['Rowena Ravenclaw', 'Helga Hufflepuff', 'Godric Gryffindor', 'Salazar Slytherin', 'Muggle']
 var YEAR = ['Freshman', 'Sophomore', 'Junior', 'Senior', 'Graduate', 'Young as Sunrise']
 class Player{
-  constructor(name, year, major, snack, life, funFact, isCaptain=false){
+  constructor(name, year, major, hobby, life, funFact, isCaptain=false){
     this.name = name
     this.year = year
     this.funFact = funFact
     this.life = life
     this.major = major
     this.year = year
-    this.snack = snack
+    this.hobby = hobby
     this.isCaptain = isCaptain
   }
   getString() {
     let name = this.name
     if(this.isCaptain) name += '*'
-    return '<b class="roster-name">'+name + '</b><br>'+this.year+'<br>'+this.major+'<br><b>Fav Tourney Snack<br></b>'+this.snack+'<br><b>Fun Fact</b><br>'+this.funFact+'<br><b>How has playing college ultimate change your life?</b><br>'+this.life;
+    return '<b class="roster-name">'+name + '</b><br>'+this.year+'<br>'+this.major+'<br><b>Fav Hobby Besides Ultimate<br></b>'+this.hobby+'<br><b>Fun Fact</b><br>'+this.funFact+'<br><b>Why do you play ultimate?</b><br>'+this.life;
   }
   getImage() {
     var pic = this.name
@@ -47,36 +47,31 @@ class Coach{
   }
 }
 var players = [
-new Player("Adeline Tan", "Junior", "Economics","Banana, fruit snack, animal crackers","Busier!!! But also more interesting and fun because I get to play with fun people and go to cool places.","I've tried playing a few sports like basketball, soccer, badminton, tennis BUT frisbee is still the most fun that's why I'm here! :) "),
-new Player("Angela Gavic", "Sophomore", "Accounting","Hot Cheetos","I made new friends and learned a lot. ","I do (sometimes competitive) ballroom dancing. "),
-new Player("Becca Napoli", "Senior", "Mechanical Engineering","Sour Patch Kids","It has brought me so many new friendships and has helped me grow my overall confidence!","I have double jointed thumbs", true),
-new Player("Bonnie Wu", "Senior", "Molecular and Cellular Biology","Animal Crackers","I now eat food from ground","I cook things"),
-new Player("Brittney Gorman", "Graduate Student", "Biophysics ","Cheez-its","I’ve become a fire breathing dragon","Jellyfish love me "),
-new Player("Cassidy Wichelecki", "Junior", "Statistics","Pretzels","I've met so many wonderful people through ultimate! ","Claw Machine Master "),
-new Player("Caroline Wheeler", "Sophomore", "Advertising","Skittles","I have a lot more friends :)","I used to work as one of Santa’s elves in the mall "),
-new DummyPlayer("Christina Thompson", "Freshman", "I can lift a cello over my head"),
-new Player("Claire \"Claw\" Trumbull", "Graduate Student", "Master of Social Work ","Beef Jerky","My Menace teammates believe in me and it feels SO good!","Whoppers are the superior $1.00 Boxed Candy."),
-new Player("Claire Szilagyi", "Junior", "Economics","Nuts","I have friends now :)","I actually have a ranked list of my favorite bathrooms on campus"),
-new Player("Eden Brewer", "Senior", "Political Science","Watermelon, Slim Jims, Grapes","This is a hard question to answer","My cats are named after cheese "),
-new Player("Erin Kuehner", "Freshman","Journalism", "Bagels and cream cheese!","It’s introduced me to a family I can rely on :)",  "I am the proud owner of every single Pokemon game since gen 3. "),
-new Player("Emma Worrell", "Sophomore", "Statistics","Slim Jims","I've made a lot of amazing friends!","Nash Grier followed me back on vine. RIP Vine."),
-new Player("Faith Zou", "Senior", "Geographic Information Science","Twix","Found a fun activity to do!","I'm a Slytherin!"),
-new DummyPlayer("Galilea Flores", "Sophomore", "I can use chopsticks with both my hands"),
-new Player("Grace Caserio", "Freshman", "Undecided ","Goldfish ","Meeting so many nice people has made my life so much more positive. ","I played the piano and the oboe in high school "),
-new Player("Julia Kasner", "Freshman", "Chemistry and Philosophy","kettle corn","Being a part of this team has allowed me to meet a lot of new people as well as learn a new skill in playing frisbee.","I'm a big fan of spoons (as in silverware). They're an essential daily tool and have many uses in and out of the kitchen."),
-new Player("Lexi Larson", "Freshman", "Engineering undeclared","Pickles","I've been able to meet super cool people and continue playing the sport that I love!","I have gone to the same summer camp for 9 years!!"),
-new Player("Lily Dix", "Junior", "CS + Math","Oranges","Since joining the team I've gotten to meet a ton of new friendly people and have become much more physically active!","My favorite animals are giraffes."),
-new Player("Luisa (RJ) Ruge-Jones", "Graduate Student", "Communication","Clif Bar BLOKS","It has kick-started my future career as a sushi chef. And also I am constantly surrounded by wonderful people.","My favorite things to do when I was a child were play outside and make lists. I know because I wrote it down in a list. ", true),
-new DummyPlayer("Mary Cook", "Sophomore", "I eat spicy foods when I cry"),
-new Player("Natalia Hryniewicki", "Freshman", "Chemistry","Chips","It has made me more fit and helped my self esteem.","I have a sister that’s 13 years younger than me."),
-new Player("Rose Dinh", "Sophomore", "Computer Science","Goldfish","Menace has been a great way to make friends, relieve stress, and beat my cousins in pick-up games of ultimate frisbee.","I crochet with a club of old ladies. "),
-new Player("Rui Yang", "Graduate Student", "Computer Science","KIND protein bar","I installed snapchat and instgram!","My English name before joining UIUC is Shirley."),
-new Player("Shirley Huang", "Graduate Student", "Computer Science","Welch's fruit snacks","I learned what it truly means to compete as an athlete, to come back stronger from injuries, and to push myself to be a better player, teammate, and friend.","#GoSpursGo"),
-new Player("Sushmita Azad", "Graduate Student", "Computer Science", "Apples and Peanut butter", "Its given me friends outside the bubble of grad-school CS! And that dopamine hit that makes winter bearable 🙂", "I have a cat named Kitta, and she sleeps sitting upright!"),
-new Player("Vanessa Tran", "Sophomore", "Undecided","Clementines","I cook things now","I can cook an egg"),
-new Player("Zifan Feng", "Senior", "Computer Science","KIND bars and peanut butter","meet a bunch of funny people","I watch all YouTube videos in 1.5 - 2x speed"),
-new Player("Zifei Feng", "Senior", "Computer Science","Animal cracker","I don't mind eating animal crackers from the ground","I didn't know I need to score in my first ultimate practice"),
-new Coach("Angelo Ramos")
+  new Player("Zifei Feng", "Graduate Student", "CS","Pizza & Bread making","Because it's a cool sport ","My first marathon was inspired by discounted cliff bars"),
+  new Player("Linh Nguyen", "Freshman", "Psychology ","Singing ","I have never played ultimate before, but I love playing frisbee. I also want to make new friends! ","My favorite TV show is The Vampire Diaries"),
+  new Player("Jamison Nightingale", "Freshman", "Food Science & Human Nutrition ","Baking/cooking vegan food!","I play ultimate to get away from life's stresses and have fun with the team.","My favorite animal is a pig."),
+  new Player("Emma Worrell", "Junior", "Economics ","Photography ","Cause it's fun!","No one likes ice cream more than me "),
+  new Player("Adeline Tan", "Senior", "Econometrics & Quantitative Economics","try new sports","Reduce stress, meet new people, it's a fun sport","I used to model for a baby clothing company for a short period of time... then they closed down"),
+  new Player("Lexi Larson", "Sophomore", "Mechanical Engineering","Running","I play ultimate because the people who play are incredible people.","I really enjoy burping!"),
+  new Player("Julia Kasner", "Sophomore", "Philosophy","Video Gaming","I play ultimate because of the team members and because it is such a new and different activity for me. There is constantly more to learn and improve upon.","I prefer being player 2 in Super Mario Galaxy"),
+  new Player("Luisa Ruge-Jones", "Graduate Student", "Communication ","Playing percussion","For good competition and to make new friends","My favorite dinosaur is the stegosaurus and I know a song about it."),
+  new Player("Summer Matthes", "Freshman", "Psychology ","Running","I play ultimate because I love the team chemistry and grit that comes along with the sport and it combines my favorite sports like running and football all in a unique way. I also love the spirit of the game component and the people that I have the opportunity to play with. You learn so much about not only yourself, but you learn from others and I think that's very crucial. ","I really love reading. Even though I don't necessarily have the time that I used to have, just thinking about reading highly relaxes me and brings me back to the times where I'd read like crazy during junior high. "),
+  new Player("Somto Agboifoh", "Freshman", "Undecided ","Playing video games","My friend introduced me to it","I can wiggle my ears"),
+  new Player("Zifan Feng", "Graduate Student", "CS","Baking and cooking","Because I need to move more in my life","I know that popcorn with Japanese mayonnaise and honey is one of the best snacks"),
+  new Player("Rui Yang", "Graduate Student", "Computer Science","Badminton (when I'm not injured)","It has competitive aspect, but the whole community is so nice and friendly.","I eventually, started using Instagram in 2021!"),
+  new Player("Celina Abdi", "Freshman", "Interdisciplinary Health Sciences","Swimming or doodling","Because I enjoy team sports and frisbee is a fun, competitive in a friendly way, and active sport that I really have learned to like. ","I have a bunny named Charlie"),
+  new Player("Yoana Hernandez", "Freshman", "Biology","baking/ makeup/ eating :)","It is a really fun distraction one from academics and second from life!","I love dr.pepper!"),
+  new Player("Claire Szilagyi", "Senior", "Economics","Walking around Target","Competition and community","I recently have picked up yogurt and kombucha making"),
+  new Player("Rivka Price", "Freshman", "Art History","Reading ","I love the team and it's a really fun sport ","I'm a vegetarian!"),
+  new Player("Rose Dinh", "Junior", "Computer Science","Sewing","It's a fun way to meet people and stay active!","I made a pair of overalls from a bedsheet during quarantine."),
+  new Player("Angela Gavic", "Junior", "Accounting","Making banana bread and cross stitching","I love my teammates and learning about the sport.","I do (sometimes competitive) ballroom dancing."),
+  new Player("Elisabeth Shiro", "Junior", "Aerospace engineering","Basketball","It's a great break from the stresses of life.",""),
+  new Player("Faith Zou", "Graduate Student", "Geographic Information Science","Long boarding","ItÃ¢â‚¬â„¢s a really fun way to spend time.","I'm a Slytherin!"),
+  new Player("Grace Caserio", "Sophomore", "Animal Science","Play with my dog","The team is full of positive people!","I played the piano and the oboe in high school"),
+  new Player("Lily Dix", "Senior", "CS + Math","Play video games","My teammates are awesome and I like being active.","My favorite animals are giraffes."),
+  new Player("Brittney Gorman", "Graduate Student", "Biophysics","Dumpster diving","I love the sport.","Jellyfish love me"),
+  new Player("Erin Kuehner", "Sophomore", "Journalism","Streaming","The team is my family and I love it all.","I am the proud owner of every single Pokemon game since gen 3."),
+  new Coach("Angelo Ramos")
 ];
 
 var rosterSummary = document.getElementById("roster-summary")
@@ -86,7 +81,7 @@ for ( var playerIndex in players) {
     var playerInfo = players[playerIndex]
     player.className = 'roster-container'
     player.innerHTML =
-      "<img class='roster-img' src='playerImages2019/" + playerInfo.getImage() + "\' alt='picture'>" +
+      "<img class='roster-img' src='playerImages2020/" + playerInfo.getImage() + "\' alt='picture'>" +
       "<div class='roster-overlay'>" +
       "<div class='roster-text'>" +
       playerInfo.getString()+ "</div></div>"
