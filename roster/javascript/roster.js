@@ -64,13 +64,15 @@ var players = [
   new Player("Claire Szilagyi", "Senior", "Economics","Walking around Target","Competition and community","I recently have picked up yogurt and kombucha making"),
   new Player("Rivka Price", "Freshman", "Art History","Reading ","I love the team and it's a really fun sport ","I'm a vegetarian!"),
   new Player("Rose Dinh", "Junior", "Computer Science","Sewing","It's a fun way to meet people and stay active!","I made a pair of overalls from a bedsheet during quarantine."),
+  new Player("Britt", "Graduate Student", "Biophysics","bread baking","The thrill of Competition ","I don't wear my helmet while biking & only have 2 loose teeth from crashes "),
+  new Player("Cora", "Graduate Student", "Environmental Science","Art","I love team sports and I wanted to branch off from soccer. Ultimate was the perfect balance of competitiveness and inclusion that I was looking for","I once stole a piece of George Washington's house "),
+  new Player("Lily Dix", "Senior", "CS + Math","Reading!","I find the competitive environment very enjoyable and love the team.","I'm a huge comic book nerd."),
+  new Player("Erin Kuehner", "Sophomore", "Advertising","Streaming video games!","It's like a second family to me. I love everyone so much. ","I am an online content creator. "),
+  new Player("Christina Thompson", "Sophomore", "Engineering Physics","Cooking, Growing plants","I like to be active and have fun!","My favorite color is indigo "),
   new Player("Angela Gavic", "Junior", "Accounting","Making banana bread and cross stitching","I love my teammates and learning about the sport.","I do (sometimes competitive) ballroom dancing."),
   new Player("Elisabeth Shiro", "Junior", "Aerospace engineering","Basketball","It's a great break from the stresses of life.",""),
-  new Player("Faith Zou", "Graduate Student", "Geographic Information Science","Long boarding","ItÃ¢â‚¬â„¢s a really fun way to spend time.","I'm a Slytherin!"),
+  new Player("Faith Zou", "Graduate Student", "Geographic Information Science","Long boarding","It's a really fun way to spend time.","I'm a Slytherin!"),
   new Player("Grace Caserio", "Sophomore", "Animal Science","Play with my dog","The team is full of positive people!","I played the piano and the oboe in high school"),
-  new Player("Lily Dix", "Senior", "CS + Math","Play video games","My teammates are awesome and I like being active.","My favorite animals are giraffes."),
-  new Player("Brittney Gorman", "Graduate Student", "Biophysics","Dumpster diving","I love the sport.","Jellyfish love me"),
-  new Player("Erin Kuehner", "Sophomore", "Journalism","Streaming","The team is my family and I love it all.","I am the proud owner of every single Pokemon game since gen 3."),
   new Coach("Angelo Ramos")
 ];
 
