@@ -47,7 +47,7 @@ class Coach{
   }
 }
 var players = [
-  new Player("Zifei Feng", "Graduate Student", "CS","Pizza & Bread making","Because it's a cool sport ","My first marathon was inspired by discounted cliff bars"),
+  new Player("Julia Kasner", "Graduate Student", "CS","Pizza & Bread making","Because it's a cool sport ","My first marathon was inspired by discounted cliff bars"),
   new Player("Linh Nguyen", "Freshman", "Psychology ","Singing ","I have never played ultimate before, but I love playing frisbee. I also want to make new friends! ","My favorite TV show is The Vampire Diaries"),
   new Player("Jamison Nightingale", "Freshman", "Food Science & Human Nutrition ","Baking/cooking vegan food!","I play ultimate to get away from life's stresses and have fun with the team.","My favorite animal is a pig."),
   new Player("Emma Worrell", "Junior", "Economics ","Photography ","Cause it's fun!","No one likes ice cream more than me "),
