@@ -27,7 +27,7 @@ class Player{
   }
   getImage() {
     var pic = this.name
-    return pic + '.JPG'
+    return pic  + '.jpg'
   }
 }
 
