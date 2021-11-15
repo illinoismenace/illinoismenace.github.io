@@ -1,10 +1,10 @@
 import csv
 import os
-with open('./playerInfo2020.tsv') as file:
+with open('./playerInfo2021.tsv') as file:
     lines = file.readlines()
     for player in lines:
         playerInfo = player.split('\t')
-        f = 'new Player("{0}", "{1}", "{2}","{3}","{4}","{5}"),'.format(*playerInfo[1:-2])
+        f = 'new Player("{0}", "{1}", "{2}","{3}","{4}","{5}","{6}","{7}"),'.format(*playerInfo[1:-1])
         print(f)
     file.close()
 
