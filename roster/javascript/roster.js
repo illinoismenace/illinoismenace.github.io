@@ -27,7 +27,7 @@ class Player{
   }
   getImage() {
     var pic = this.name
-    return pic + '.JPEG'
+    return pic + '.JPG'
   }
 }
 
@@ -97,7 +97,7 @@ for ( var playerIndex in players) {
     player.className = 'roster-container'
     
     player.innerHTML =
-      "<img class='roster-img' src='playerImages2021/" + playerInfo.getImage() + "\' alt='picture'>" +
+      "<img class='roster-img' src='playerImages2021JPG/" + playerInfo.getImage() + "\' alt='picture'>" +
       "<div class='roster-overlay'>" +
       "<div class='roster-text'>" +
       playerInfo.getString()+ "</div></div>"
